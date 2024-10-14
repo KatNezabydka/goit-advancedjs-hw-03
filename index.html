@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>HW 3</title>
+  <script type="module" crossorigin src="/goit-advancedjs-hw-03/commonHelpers.js"></script>
+  <link rel="modulepreload" crossorigin href="/goit-advancedjs-hw-03/assets/vendor-8c59ed88.js">
+  <link rel="stylesheet" href="/goit-advancedjs-hw-03/assets/vendor-1cd1f9d9.css">
+  <link rel="stylesheet" href="/goit-advancedjs-hw-03/assets/index-2379aaf9.css">
+</head>
+<body>
+<section class="search-image">
+  <div class="container">
+    <form class="search-form js-search-form">
+      <input class="input search-input js-search-input" placeholder="Search images..." type="text" name="user_query"
+             required />
+      <button class="search-btn btn" type="submit">Search</button>
+    </form>
+    <div id="loader" class="loader" style="display: none;">Loading images, please wait...</div>
+    <ul class="gallery js-gallery">
+    </ul>
+    <p class="not-found-text"></p>
+  </div>
+</section>
+
+</body>
+</html>
