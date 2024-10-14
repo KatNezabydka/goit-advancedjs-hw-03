@@ -15,6 +15,11 @@ function handleSearch(event) {
 
   const form = event.currentTarget;
   const userQuery = form.elements.user_query.value.trim();
+  if (userQuery === ''){
+    showErrorToast("Search can't be empty");
+    form.reset();
+    return;
+  }
 
   getPhotos(userQuery)
     .then(data => {
